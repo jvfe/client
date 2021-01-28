@@ -1,0 +1,16 @@
+name: 'Get Updated Package Version'
+inputs:
+  shared-package:
+    required: true
+    default: ''
+    description: 'The npm package of shared'
+  parent-package:
+    required: true
+    default: ''
+    description: 'The npm package of client'
+outputs:
+  updated_version:
+    description: 'The new version of the npm package'
+runs:
+  using: 'node12'
+  main: 'index.js'
